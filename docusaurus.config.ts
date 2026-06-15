@@ -47,7 +47,7 @@ const config: Config = {
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: ['./src/css/custom.css', './src/css/nav-icons.css'],
         },
       } satisfies Preset.Options,
     ],
@@ -70,11 +70,13 @@ const config: Config = {
           sidebarId: 'wiki',
           position: 'left',
           label: 'Wiki',
+          className: 'dcv-ico dcv-ico--book',
         },
         {
           href: 'https://forum.dcvault.net',
           label: 'Forum',
           position: 'left',
+          className: 'dcv-ico dcv-ico--forum',
         },
         {
           type: 'localeDropdown',
@@ -84,6 +86,7 @@ const config: Config = {
           href: 'https://github.com/dcvault-net/dcvault.net',
           label: 'GitHub',
           position: 'right',
+          className: 'dcv-ico dcv-ico--github',
         },
       ],
     },
@@ -112,6 +115,13 @@ const config: Config = {
           title: 'More',
           items: [
             {label: 'GitHub', href: 'https://github.com/dcvault-net/dcvault.net'},
+          ],
+        },
+        {
+          // Friends and related sites. Replace the placeholder with real links.
+          title: 'Friends',
+          items: [
+            {label: 'Your link here', href: '#'},
           ],
         },
       ],

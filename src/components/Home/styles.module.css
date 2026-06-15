@@ -139,6 +139,32 @@
   line-height: 1.4;
 }
 
+.badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: 0.08em;
+  color: var(--dcv-plate);
+  background: var(--dcv-lime);
+}
+
+/* Placeholder tile: visible but not clickable */
+.topicCardStatic {
+  cursor: default;
+  opacity: 0.72;
+}
+
+.topicCardStatic:hover {
+  transform: none;
+  border-color: var(--ifm-color-emphasis-200);
+  box-shadow: none;
+}
+
 @media (max-width: 768px) {
   .featureCards {
     grid-template-columns: 1fr;

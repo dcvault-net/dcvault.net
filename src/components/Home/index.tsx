@@ -65,6 +65,22 @@ const ICONS: Record<string, ReactNode> = {
       <path d="M16 3.13a4 4 0 0 1 0 7.75" />
     </>
   ),
+  list: (
+    <>
+      <line x1="8" y1="6" x2="21" y2="6" />
+      <line x1="8" y1="12" x2="21" y2="12" />
+      <line x1="8" y1="18" x2="21" y2="18" />
+      <line x1="3" y1="6" x2="3.01" y2="6" />
+      <line x1="3" y1="12" x2="3.01" y2="12" />
+      <line x1="3" y1="18" x2="3.01" y2="18" />
+    </>
+  ),
+  link: (
+    <>
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+    </>
+  ),
   arrowRight: (
     <>
       <line x1="5" y1="12" x2="19" y2="12" />
@@ -132,8 +148,9 @@ export function TopicGrid({children}: {children: ReactNode}): ReactNode {
 
 type TopicCardProps = {
   title: string;
-  href: string;
+  href?: string;
   icon: string;
+  badge?: string;
   children: ReactNode;
 };
 
@@ -141,18 +158,35 @@ export function TopicCard({
   title,
   href,
   icon,
+  badge,
   children,
 }: TopicCardProps): ReactNode {
   const localize = useLocalize();
-  return (
-    <Link to={localize(href)} className={styles.topicCard}>
+  const inner = (
+    <>
       <span className={styles.topicIcon}>
         <Icon name={icon} />
       </span>
       <span className={styles.topicText}>
-        <span className={styles.topicTitle}>{title}</span>
+        <span className={styles.topicTitle}>
+          {title}
+          {badge && <span className={styles.badge}>{badge}</span>}
+        </span>
         <span className={styles.topicDesc}>{children}</span>
       </span>
+    </>
+  );
+
+  // A card with a badge (e.g. "Soon") or no target renders as a static,
+  // non-clickable placeholder.
+  if (badge || !href) {
+    return (
+      <div className={`${styles.topicCard} ${styles.topicCardStatic}`}>{inner}</div>
+    );
+  }
+  return (
+    <Link to={localize(href)} className={styles.topicCard}>
+      {inner}
     </Link>
   );
 }
