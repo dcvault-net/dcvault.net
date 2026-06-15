@@ -1,0 +1,79 @@
+/**
+ * Global styles. The classic template bundles Infima.
+ * Palette derived from the DCVault logo: lime accent (#e7ff0c) on a near-black
+ * vault plate. Light mode uses darker lime-green for link contrast; dark mode
+ * uses the bright lime that matches the logo.
+ */
+
+:root {
+  --ifm-color-primary: #4d7c0f;
+  --ifm-color-primary-dark: #457010;
+  --ifm-color-primary-darker: #41690e;
+  --ifm-color-primary-darkest: #36570a;
+  --ifm-color-primary-light: #568a11;
+  --ifm-color-primary-lighter: #5c9212;
+  --ifm-color-primary-lightest: #67a516;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Brand accent and surfaces */
+  --dcv-lime: #e7ff0c;
+  --dcv-plate: #151719;
+  --dcv-plate-2: #1f2326;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #a3e635;
+  --ifm-color-primary-dark: #8fd61f;
+  --ifm-color-primary-darker: #84cc16;
+  --ifm-color-primary-darkest: #65a30d;
+  --ifm-color-primary-light: #b1ea54;
+  --ifm-color-primary-lighter: #bef264;
+  --ifm-color-primary-lightest: #d0f58c;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ifm-background-color: #151719;
+}
+
+/* Landing hero: dark vault band, works in both color modes */
+.dcv-hero {
+  background: linear-gradient(180deg, var(--dcv-plate) 0%, var(--dcv-plate-2) 100%);
+  border-radius: 16px;
+  padding: 3rem 1.5rem 2.75rem;
+  text-align: center;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.dcv-hero__logo {
+  width: 340px;
+  max-width: 80%;
+  height: auto;
+}
+
+.dcv-hero__title {
+  color: #f5f7f0;
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.dcv-hero__tagline {
+  color: #c7ccc0;
+  max-width: 36rem;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+.dcv-hero__title .dcv-mark {
+  color: var(--dcv-lime);
+}
+
+/* Keep landing content to a comfortable reading width */
+.dcv-landing {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.dcv-landing h2 {
+  margin-top: 2.25rem;
+}

@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Aktuell",
+    "description": "The label for version current"
+  },
+  "sidebar.wiki.category.Basics": {
+    "message": "Grundlagen",
+    "description": "The label for category 'Basics' in sidebar 'wiki'"
+  },
+  "sidebar.wiki.category.Clients & Usage": {
+    "message": "Clients & Nutzung",
+    "description": "The label for category 'Clients & Usage' in sidebar 'wiki'"
+  },
+  "sidebar.wiki.category.Running a Hub": {
+    "message": "Hub betreiben",
+    "description": "The label for category 'Running a Hub' in sidebar 'wiki'"
+  },
+  "sidebar.wiki.category.Protocols & Technical": {
+    "message": "Protokolle & Technik",
+    "description": "The label for category 'Protocols & Technical' in sidebar 'wiki'"
+  },
+  "sidebar.wiki.category.Community": {
+    "message": "Community",
+    "description": "The label for category 'Community' in sidebar 'wiki'"
+  },
+  "sidebar.wiki.link.Forum": {
+    "message": "Forum",
+    "description": "The label for link 'Forum' in sidebar 'wiki', linking to 'https://forum.dcvault.net'"
+  }
+}

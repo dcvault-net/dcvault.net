@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "DCVault",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "DCVault",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Wiki": {
+    "message": "Wiki",
+    "description": "Navbar item with label Wiki"
+  },
+  "item.label.Forum": {
+    "message": "Forum",
+    "description": "Navbar item with label Forum"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

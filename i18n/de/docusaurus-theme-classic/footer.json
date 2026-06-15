@@ -1,0 +1,54 @@
+{
+  "link.title.Wiki": {
+    "message": "Wiki",
+    "description": "The title of the footer links column with title=Wiki in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "Mehr",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Basics": {
+    "message": "Grundlagen",
+    "description": "The label of footer link with label=Basics linking to /docs/basics/what-is-direct-connect"
+  },
+  "link.item.label.Clients & Usage": {
+    "message": "Clients & Nutzung",
+    "description": "The label of footer link with label=Clients & Usage linking to /docs/clients/choosing-a-client"
+  },
+  "link.item.label.Running a Hub": {
+    "message": "Hub betreiben",
+    "description": "The label of footer link with label=Running a Hub linking to /docs/hub/basics"
+  },
+  "link.item.label.Protocols & Technical": {
+    "message": "Protokolle & Technik",
+    "description": "The label of footer link with label=Protocols & Technical linking to /docs/protocols/nmdc"
+  },
+  "link.item.label.Forum": {
+    "message": "Forum",
+    "description": "The label of footer link with label=Forum linking to https://forum.dcvault.net"
+  },
+  "link.item.label.FAQ": {
+    "message": "FAQ",
+    "description": "The label of footer link with label=FAQ linking to /docs/community/faq"
+  },
+  "link.item.label.Glossary": {
+    "message": "Glossar",
+    "description": "The label of footer link with label=Glossary linking to /docs/community/glossary"
+  },
+  "link.item.label.Contributing": {
+    "message": "Mitmachen",
+    "description": "The label of footer link with label=Contributing linking to /docs/community/contributing"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/dcvault-net/dcvault.net"
+  },
+  "copyright": {
+    "message": "Inhalte unter <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\">CC BY-SA 4.0</a> &middot; &copy; 2026 DCVault &middot; Erstellt mit Docusaurus",
+    "description": "The footer copyright"
+  }
+}
