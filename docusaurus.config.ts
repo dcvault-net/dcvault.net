@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'DCVault',
-  tagline: 'Your guide to Direct Connect',
+  tagline: 'Your Community to Direct Connect',
   favicon: 'img/favicon.png',
 
   future: {
@@ -50,6 +50,21 @@ const config: Config = {
           customCss: ['./src/css/custom.css', './src/css/nav-icons.css'],
         },
       } satisfies Preset.Options,
+    ],
+  ],
+
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['en', 'de'],
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 8,
+      },
     ],
   ],
 
@@ -121,7 +136,9 @@ const config: Config = {
           // Friends and related sites. Replace the placeholder with real links.
           title: 'Friends',
           items: [
-            {label: 'Your link here', href: '#'},
+            {label: 'DCHublist', href: 'https://dchublist.org/'},
+            {label: 'Team Elite', href: 'https://www.te-home.net/'},
+            {label: 'DC++ Blog', href: 'https://dcpp.wordpress.com/'},
           ],
         },
       ],
