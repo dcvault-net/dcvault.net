@@ -68,12 +68,12 @@
   color: var(--dcv-lime);
 }
 
-/* Keep landing content to a comfortable reading width */
+/* Landing width: wider than the default reading column to fit the card grid */
 .dcv-landing {
-  max-width: 52rem;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
 .dcv-landing h2 {
-  margin-top: 2.25rem;
+  margin-top: 2.5rem;
 }

@@ -5,34 +5,32 @@ wrapperClassName: dcv-landing
 hide_table_of_contents: true
 ---
 
+import {FeatureCards, FeatureCard, TopicGrid, TopicCard} from '@site/src/components/Home';
+
 <div className="dcv-hero">
   <img className="dcv-hero__logo" src="/img/logo-full.png" alt="DCVault" />
   <h1 className="dcv-hero__title">Your guide to Direct Connect</h1>
   <p className="dcv-hero__tagline">DCVault explains the Direct Connect (DC++) peer-to-peer network from the ground up: how it works, how to take part, and how to run your own hub.</p>
 </div>
 
-New to it? Direct Connect (DC++) is a peer-to-peer network for sharing files and
-chatting on community-run hubs. Every topic lives in the sidebar, and this page
-points you to a good place to begin.
+New to it? Direct Connect (DC++) is a peer-to-peer network for sharing files and chatting on community-run hubs. Pick a path below, or browse the full wiki in the sidebar.
 
-## Where do I start?
+<FeatureCards>
+  <FeatureCard title="Use the network" href="/docs/clients/choosing-a-client" cta="Get started as a user" icon="share">Set up a client, find hubs, and share files.</FeatureCard>
+  <FeatureCard title="Run a hub" href="/docs/hub/basics" cta="Get started as a hub operator" icon="server">From choosing hub software to scripting.</FeatureCard>
+</FeatureCards>
 
-[What is Direct Connect?](/docs/basics/what-is-direct-connect) is the five-minute
-intro if you are brand new. If you would rather dive in, the
-[Quick start](/docs/basics/quick-start) gets you onto the network in a few steps.
+## Explore the wiki
 
-## Use the network
-
-Set up a client, find hubs, and share files.
-[Get started as a user](/docs/clients/choosing-a-client).
-
-## Run a hub
-
-From choosing hub software to scripting.
-[Get started as a hub operator](/docs/hub/basics).
+<TopicGrid>
+  <TopicCard title="Basics" href="/docs/basics/what-is-direct-connect" icon="compass">What Direct Connect is and how the network works.</TopicCard>
+  <TopicCard title="Quick start" href="/docs/basics/quick-start" icon="zap">Get onto your first hub in a few steps.</TopicCard>
+  <TopicCard title="Clients & usage" href="/docs/clients/choosing-a-client" icon="download">Choose a client, share files, search and download.</TopicCard>
+  <TopicCard title="Running a hub" href="/docs/hub/basics" icon="server">Hub software, configuration, moderation, scripting.</TopicCard>
+  <TopicCard title="Protocols & technical" href="/docs/protocols/nmdc" icon="code">NMDC, ADC, Tiger Tree Hashing, magnet links.</TopicCard>
+  <TopicCard title="Community" href="/docs/community/faq" icon="users">FAQ, glossary, and how to contribute.</TopicCard>
+</TopicGrid>
 
 ## Join the community
 
-Questions and discussion live on the [forum](https://forum.dcvault.net). Spot
-something missing or wrong? [Anyone can contribute](/docs/community/contributing),
-and this wiki grows with the community.
+Questions and discussion live on the [forum](https://forum.dcvault.net). Spot something missing or wrong? [Anyone can contribute](/docs/community/contributing), and this wiki grows with the community.
