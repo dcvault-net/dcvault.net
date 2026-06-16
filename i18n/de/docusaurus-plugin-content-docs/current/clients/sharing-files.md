@@ -6,6 +6,10 @@ sidebar_position: 4
 
 Über die Freigabe trägst du zum Netzwerk bei. Dein Client bietet keine losen Dateien spontan an. Er baut eine Dateiliste von allem, was du teilst, mit Ordnerstruktur, Namen, Größen und Hashes (meist TTH). Andere laden diese Liste, stöbern darin und holen sich, was sie wollen, direkt von deinem Rechner.
 
+:::warning[Teile nur, was du wirklich teilen willst]
+Gib keine Ordner frei, die private Daten wie persönliche Fotos, Dokumente oder Systemordner enthalten. Alles in deiner Freigabe ist für andere auf dem Hub sichtbar und kann heruntergeladen werden. Am sichersten legst du einen eigenen Ordner nur für die Freigabe an und kopierst dort nur die Dateien hinein, die du anbieten willst.
+:::
+
 ## Freigabe in DC++ einrichten
 
 ![DC++ Freigabe-Einstellungen](/img/getting-started/5_sharing.png)

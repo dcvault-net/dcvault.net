@@ -6,6 +6,10 @@ sidebar_position: 4
 
 Sharing is how you contribute to the network. Your client does not offer loose files on the fly. It builds a file list of everything you share, with folder structure, names, sizes, and hashes (usually TTH). Other people download that list, browse it, and grab what they want, straight from your machine.
 
+:::warning[Only share what you mean to]
+Do not add folders that hold private data like personal photos, documents, or any system folders. Everything in your share is visible to others on the hub and can be downloaded. The safest approach is to create a separate folder just for sharing and copy in only the files you want to offer.
+:::
+
 ## Setting up your share in DC++
 
 ![DC++ sharing settings](/img/getting-started/5_sharing.png)

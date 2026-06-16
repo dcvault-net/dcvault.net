@@ -14,15 +14,19 @@ Wähle einen Direct-Connect-Client für dein System. Wenn du unsicher bist, star
 
 Installiere den Client und geh die ersten Einstellungen durch: Spitzname, Verbindung, Downloads und deine Freigabe. Die [Installation & Einrichtung](/de/docs/clients/installation-setup) zeigt jeden Schritt.
 
-## 3. Active Mode zum Laufen bringen
+## 3. Etwas freigeben
+
+Das Netzwerk lebt vom Teilen, und viele Hubs verlangen eine Mindest-Freigabe, bevor sie dich reinlassen. Wähle Ordner, die du gern anbietest, dein Client baut daraus eine Dateiliste, die andere herunterladen können. Siehe [Dateien teilen](/de/docs/clients/sharing-files).
+
+## 4. Active Mode zum Laufen bringen
 
 Öffne die richtigen Ports an deinem Router, damit andere Clients dich erreichen. Erst dann funktionieren Suche und Download richtig. Siehe [Active- vs. Passive-Mode](/de/docs/clients/active-vs-passive-mode).
 
-## 4. Einem Hub beitreten
+## 5. Einem Hub beitreten
 
 Öffne die öffentliche Hub-Liste, wähle einen Hub und verbinde dich. Prüfe vorher die Freigaberegeln. Siehe [Hubs finden & beitreten](/de/docs/clients/finding-joining-hubs).
 
-## 5. Suchen und herunterladen
+## 6. Suchen und herunterladen
 
 Stöbere in der Dateiliste eines Nutzers oder suche im Hub, dann lade direkt von anderen Nutzern. Siehe [Suchen & herunterladen](/de/docs/clients/searching-downloading).
 
