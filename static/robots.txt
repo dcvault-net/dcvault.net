@@ -1,0 +1,5 @@
+# https://dcvault.net
+User-agent: *
+Allow: /
+
+Sitemap: https://dcvault.net/sitemap.xml

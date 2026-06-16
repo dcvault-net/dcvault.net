@@ -59,6 +59,8 @@ export default async function createConfig(): Promise<Config> {
       ],
     ],
 
+    plugins: ['./src/plugins/llms.js'],
+
     themes: [
       [
         '@easyops-cn/docusaurus-search-local',
@@ -75,7 +77,7 @@ export default async function createConfig(): Promise<Config> {
     ],
 
     themeConfig: {
-      image: 'img/logo-full.png',
+      image: 'img/social-card.png',
       colorMode: {
         respectPrefersColorScheme: true,
       },
