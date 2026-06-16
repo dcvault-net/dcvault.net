@@ -1,0 +1,44 @@
+/* Glossary as a responsive grid of compact term cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.85rem;
+  margin: 1.75rem 0;
+}
+
+.card {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-left: 3px solid var(--ifm-color-primary);
+  border-radius: 10px;
+  background: var(--ifm-card-background-color, var(--ifm-background-surface-color));
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.term {
+  margin: 0 0 0.3rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.termLink {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.termLink:hover {
+  text-decoration: underline;
+}
+
+.def {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-800);
+}

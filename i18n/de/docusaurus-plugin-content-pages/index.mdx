@@ -1,40 +1,38 @@
 ---
-title: Dein Wegweiser durch Direct Connect
+title: Deine Community für Direct Connect
 description: "DCVault ist die Community-Wiki zum Direct-Connect-P2P-Netzwerk (DC++): Anleitungen zu Clients, Hubs, dem ADC/NMDC-Protokoll und Filesharing."
 wrapperClassName: dcv-landing
 hide_table_of_contents: true
 ---
 
+import {FeatureCards, FeatureCard, TopicGrid, TopicCard} from '@site/src/components/Home';
+
 <div className="dcv-hero">
   <img className="dcv-hero__logo" src="/img/logo-full.png" alt="DCVault" />
-  <h1 className="dcv-hero__title">Dein Wegweiser durch Direct Connect</h1>
+  <h1 className="dcv-hero__title">Deine Community für Direct Connect</h1>
   <p className="dcv-hero__tagline">DCVault erklärt das Direct-Connect-(DC++)-Peer-to-Peer-Netzwerk von Grund auf: wie es funktioniert, wie du mitmachst und wie du selbst einen Hub betreibst.</p>
 </div>
 
-Noch nie davon gehört? Direct Connect (DC++) ist ein Peer-to-Peer-Netzwerk zum
-Teilen von Dateien und zum Chatten auf Hubs, die von der Community betrieben
-werden. Alle Themen findest du in der Seitenleiste, und diese Seite zeigt dir
-einen guten Einstieg.
+<p className="dcv-lead">Noch nie davon gehört? Direct Connect (DC++) ist ein Peer-to-Peer-Netzwerk zum Teilen von Dateien und zum Chatten auf Hubs, die von der Community betrieben werden. Wähle unten einen Einstieg.</p>
 
-## Wo fange ich an?
+<FeatureCards>
+  <FeatureCard title="Das Netzwerk nutzen" href="/docs/clients/choosing-a-client" cta="Einstieg für Nutzer" icon="share">Client einrichten, Hubs finden, Dateien teilen.</FeatureCard>
+  <FeatureCard title="Einen Hub betreiben" href="/docs/hub/basics" cta="Einstieg für Hub-Betreiber" icon="server">Von der passenden Hub-Software bis zum Scripting.</FeatureCard>
+</FeatureCards>
 
-[Was ist Direct Connect?](/de/docs/basics/what-is-direct-connect) ist die
-Einführung in fünf Minuten, wenn du ganz neu bist. Lieber direkt loslegen? Der
-[Schnellstart](/de/docs/basics/quick-start) bringt dich in wenigen Schritten ins
-Netzwerk.
+## Das Wiki erkunden
 
-## Das Netzwerk nutzen
-
-Client einrichten, Hubs finden, Dateien teilen.
-[Einstieg für Nutzer](/de/docs/clients/choosing-a-client).
-
-## Einen Hub betreiben
-
-Von der passenden Hub-Software bis zum Scripting.
-[Einstieg für Hub-Betreiber](/de/docs/hub/basics).
+<TopicGrid>
+  <TopicCard title="Grundlagen" href="/docs/basics/what-is-direct-connect" icon="compass">Was Direct Connect ist und wie das Netzwerk funktioniert.</TopicCard>
+  <TopicCard title="Schnellstart" href="/docs/basics/quick-start" icon="zap">In wenigen Schritten auf deinen ersten Hub.</TopicCard>
+  <TopicCard title="Clients & Nutzung" href="/docs/clients/choosing-a-client" icon="download">Client wählen, Dateien teilen, suchen und herunterladen.</TopicCard>
+  <TopicCard title="Hub betreiben" href="/docs/hub/basics" icon="server">Hub-Software, Konfiguration, Moderation, Scripting.</TopicCard>
+  <TopicCard title="Protokolle & Technik" href="/docs/protocols/nmdc" icon="code">NMDC, ADC, Tiger Tree Hashing, Magnet-Links.</TopicCard>
+  <TopicCard title="Community" href="/docs/community/faq" icon="users">FAQ, Glossar und wie du mitmachst.</TopicCard>
+  <TopicCard title="Community-Ressourcen" href="/docs/community/resources" icon="link">Kuratierte Links zu Seiten, die zum DC-Netzwerk beitragen.</TopicCard>
+  <TopicCard title="Hubliste" icon="list" badge="Bald">Ein Verzeichnis öffentlicher Hubs. Kommt bald.</TopicCard>
+</TopicGrid>
 
 ## Mitreden und mitmachen
 
-Fragen und Austausch laufen im [Forum](https://forum.dcvault.net). Fehlt etwas
-oder ist etwas falsch? [Jeder kann mitschreiben](/de/docs/community/contributing),
-und dieses Wiki wächst mit der Community.
+Fragen und Austausch laufen im [Forum](https://forum.dcvault.net). Fehlt etwas oder ist etwas falsch? [Jeder kann mitschreiben](/de/docs/community/contributing), und dieses Wiki wächst mit der Community.

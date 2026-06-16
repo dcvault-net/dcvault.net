@@ -1,0 +1,97 @@
+/* Full-width, styled client comparison table */
+.wrap {
+  overflow-x: auto;
+  margin: 1.75rem 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.table th {
+  text-align: left;
+  padding: 0.6rem 0.7rem;
+  border-bottom: 2px solid var(--ifm-color-emphasis-300);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  vertical-align: middle;
+}
+
+.table tbody tr:hover td {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.center {
+  text-align: center;
+}
+
+.name {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.yes,
+.no {
+  display: inline-flex;
+}
+
+.yes {
+  color: #2e9b4f;
+}
+
+.no {
+  color: var(--ifm-color-emphasis-400);
+}
+
+.yes svg,
+.no svg {
+  width: 18px;
+  height: 18px;
+}
+
+.active,
+.inactive {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.12rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.active::before,
+.inactive::before {
+  content: '';
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.active {
+  color: #2e9b4f;
+  background: color-mix(in srgb, #2e9b4f 14%, transparent);
+}
+
+.inactive {
+  color: var(--ifm-color-emphasis-600);
+  background: var(--ifm-color-emphasis-200);
+}
+
+.dl {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dash {
+  color: var(--ifm-color-emphasis-500);
+}

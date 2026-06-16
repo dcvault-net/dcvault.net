@@ -6,12 +6,15 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 // under our control. German category labels are translated through
 // i18n/de/docusaurus-plugin-content-docs/current.json. Document labels come
 // from each file's frontmatter title, so they translate via the German files.
+// Categories start expanded (collapsed: false) and carry a className that the
+// CSS in src/css/nav-icons.css turns into a small leading icon.
 const sidebars: SidebarsConfig = {
   wiki: [
     {
       type: 'category',
       label: 'Basics',
       collapsed: false,
+      className: 'dcv-sbico dcv-sbico--compass',
       items: [
         'basics/what-is-direct-connect',
         'basics/how-the-network-works',
@@ -21,6 +24,8 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Clients & Usage',
+      collapsed: false,
+      className: 'dcv-sbico dcv-sbico--download',
       items: [
         'clients/choosing-a-client',
         'clients/dc-clients',
@@ -35,6 +40,8 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Running a Hub',
+      collapsed: false,
+      className: 'dcv-sbico dcv-sbico--server',
       items: [
         'hub/basics',
         'hub/software',
@@ -47,6 +54,8 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Protocols & Technical',
+      collapsed: false,
+      className: 'dcv-sbico dcv-sbico--code',
       items: [
         'protocols/nmdc',
         'protocols/adc',
@@ -57,10 +66,13 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Community',
+      collapsed: false,
+      className: 'dcv-sbico dcv-sbico--users',
       items: [
         'community/faq',
         'community/glossary',
         'community/contributing',
+        'community/resources',
         {
           type: 'link',
           label: 'Forum',

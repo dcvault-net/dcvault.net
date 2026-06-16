@@ -68,12 +68,54 @@
   color: var(--dcv-lime);
 }
 
-/* Keep landing content to a comfortable reading width */
+/* Landing width: wider than the default reading column to fit the card grid */
 .dcv-landing {
-  max-width: 52rem;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
 .dcv-landing h2 {
-  margin-top: 2.25rem;
+  margin-top: 2.5rem;
+}
+
+/* Centered lead paragraph under the hero */
+.dcv-lead {
+  max-width: 46rem;
+  margin: 0 auto 0.5rem;
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Brand-aligned admonitions (lime + anthracite).
+   tip = brand lime, note/info = anthracite neutral.
+   warning/danger keep their semantic signal colors. */
+.theme-admonition-tip {
+  --ifm-alert-border-color: #4d7c0f;
+  --ifm-alert-background-color: #f4f9e7;
+  --ifm-alert-background-color-highlight: rgba(77, 124, 15, 0.12);
+  --ifm-alert-foreground-color: #2b3514;
+}
+
+.theme-admonition-note,
+.theme-admonition-info {
+  --ifm-alert-border-color: #475054;
+  --ifm-alert-background-color: #f3f4f4;
+  --ifm-alert-background-color-highlight: rgba(21, 23, 25, 0.07);
+  --ifm-alert-foreground-color: #20242a;
+}
+
+[data-theme='dark'] .theme-admonition-tip {
+  --ifm-alert-border-color: #a3e635;
+  --ifm-alert-background-color: rgba(163, 230, 53, 0.1);
+  --ifm-alert-background-color-highlight: rgba(163, 230, 53, 0.18);
+  --ifm-alert-foreground-color: #e7efd6;
+}
+
+[data-theme='dark'] .theme-admonition-note,
+[data-theme='dark'] .theme-admonition-info {
+  --ifm-alert-border-color: #9aa3a8;
+  --ifm-alert-background-color: rgba(255, 255, 255, 0.05);
+  --ifm-alert-background-color-highlight: rgba(255, 255, 255, 0.09);
+  --ifm-alert-foreground-color: #e6e8ea;
 }

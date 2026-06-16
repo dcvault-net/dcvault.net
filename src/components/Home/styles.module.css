@@ -1,0 +1,172 @@
+/* Feature cards: two dark vault-plate cards with a lime accent. Dark in both
+   color modes for a strong, on-brand block. */
+.featureCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0 2.75rem;
+}
+
+.featureCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 1.6rem 1.6rem 1.45rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--dcv-plate) 0%, var(--dcv-plate-2) 100%);
+  border: 1px solid rgba(231, 255, 12, 0.16);
+  color: #e9ece3;
+  text-decoration: none;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.featureCard:hover {
+  text-decoration: none;
+  color: #e9ece3;
+  transform: translateY(-2px);
+  border-color: var(--dcv-lime);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
+.featureIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: rgba(231, 255, 12, 0.12);
+  color: var(--dcv-lime);
+  margin-bottom: 0.35rem;
+}
+
+.featureIcon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.featureTitle {
+  font-size: 1.22rem;
+  font-weight: 650;
+  color: #ffffff;
+}
+
+.featureBody {
+  color: #c4c9bd;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.featureCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  color: var(--dcv-lime);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.ctaArrow {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.15s ease;
+}
+
+.featureCard:hover .ctaArrow {
+  transform: translateX(3px);
+}
+
+/* Topic tiles: lighter, theme-aware grid that links into the wiki. */
+.topicGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.85rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.topicCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 1.1rem 1.15rem;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-card-background-color, var(--ifm-background-surface-color));
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.topicCard:hover {
+  text-decoration: none;
+  color: inherit;
+  transform: translateY(-2px);
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+}
+
+.topicIcon {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  color: var(--ifm-color-primary);
+}
+
+.topicIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.topicText {
+  display: flex;
+  flex-direction: column;
+}
+
+.topicTitle {
+  font-weight: 650;
+  margin-bottom: 0.15rem;
+}
+
+.topicDesc {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: 0.08em;
+  color: var(--dcv-plate);
+  background: var(--dcv-lime);
+}
+
+/* Placeholder tile: visible but not clickable */
+.topicCardStatic {
+  cursor: default;
+  opacity: 0.72;
+}
+
+.topicCardStatic:hover {
+  transform: none;
+  border-color: var(--ifm-color-emphasis-200);
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .featureCards {
+    grid-template-columns: 1fr;
+  }
+}
