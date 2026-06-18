@@ -1,6 +1,6 @@
 # DCVault
 
-Landing page and bilingual wiki for the Direct Connect (DC++) peer-to-peer
+Landing page and bilingual wiki for the Direct Connect (DC) peer-to-peer
 network. Built with [Docusaurus](https://docusaurus.io/) and hosted on
 Cloudflare Pages.
 

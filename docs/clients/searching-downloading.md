@@ -4,7 +4,15 @@ description: "Search across a hub and download files from other users."
 sidebar_position: 6
 ---
 
-Once you are on a hub you can browse what others share and download straight from them.
+Once you are on a hub you can search for files, browse what others share, and download straight from them.
+
+## Searching
+
+![Searching a hub in DC++](/img/getting-started/9_search.png)
+
+1. Click the search icon in the toolbar to open a search tab.
+2. Type what you are looking for. Use the filters (size, file type, hubs) to narrow the results.
+3. Matches appear here. As long as the search tab stays open, results keep coming in.
 
 ## Browsing a file list
 

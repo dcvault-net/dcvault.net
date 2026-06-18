@@ -11,8 +11,8 @@ export default function Root({children}: {children: ReactNode}): ReactNode {
   const isDe = i18n.currentLocale === 'de';
   const inLanguage = isDe ? 'de-DE' : 'en-US';
   const description = isDe
-    ? 'Community-Wiki zum Direct-Connect-P2P-Netzwerk (DC++): Clients, Hubs, Protokolle und Filesharing.'
-    : 'Community wiki for the Direct Connect (DC++) P2P network: clients, hubs, protocols and file sharing.';
+    ? 'Community-Wiki zum Direct-Connect-Netzwerk (DC): Clients wie DC++, Hubs, Protokolle und Filesharing.'
+    : 'Community wiki for the Direct Connect (DC) peer-to-peer network: clients like DC++, hubs, protocols and file sharing.';
 
   const jsonLd = {
     '@context': 'https://schema.org',

@@ -1,10 +1,14 @@
 ---
 title: "Was ist Direct Connect?"
-description: "Eine kurze Einführung in Direct Connect (DC++), das Peer-to-Peer-Netzwerk zum Teilen von Dateien und Chatten auf Community-Hubs."
+description: "Eine kurze Einführung in Direct Connect (DC), das Peer-to-Peer-Netzwerk zum Teilen von Dateien und Chatten auf Community-Hubs, und wie es sich zum Client DC++ verhält."
 sidebar_position: 1
 ---
 
-Direct Connect (DC++) ist ein Peer-to-Peer-Netzwerk zum Teilen von Dateien und zum Chatten auf Hubs, die von der Community betrieben werden. Wer von Torrents oder HTTP-Downloads kommt, stolpert fast immer über eine Sache: Der Hub ist nicht der Ort, an dem die Dateien liegen. Ein Hub ist ein Treffpunkt. Du verbindest dich, siehst wer online ist, chattest und suchst. Beim Download spricht dein Client direkt mit dem Client der anderen Person. Der Hub koordiniert, die Übertragung läuft direkt zwischen den Clients.
+Direct Connect (DC) ist ein Peer-to-Peer-Netzwerk zum Teilen von Dateien und zum Chatten auf Hubs, die von der Community betrieben werden. Wer von Torrents oder HTTP-Downloads kommt, stolpert fast immer über eine Sache: Der Hub ist nicht der Ort, an dem die Dateien liegen. Ein Hub ist ein Treffpunkt. Du verbindest dich, siehst wer online ist, chattest und suchst. Beim Download spricht dein Client direkt mit dem Client der anderen Person. Der Hub koordiniert, die Übertragung läuft direkt zwischen den Clients.
+
+:::note[Direct Connect vs. DC++]
+Direct Connect (DC) ist das Netzwerk. DC++ ist der bekannteste Client dafür, einer von mehreren. Viele sagen „DC++", wenn sie das Netzwerk meinen, aber das ist nicht dasselbe.
+:::
 
 ## Ein bisschen Geschichte
 
