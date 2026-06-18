@@ -4,7 +4,15 @@ description: "Auf einem Hub suchen und Dateien von anderen Nutzern herunterladen
 sidebar_position: 6
 ---
 
-Sobald du auf einem Hub bist, kannst du stöbern, was andere teilen, und direkt von ihnen laden.
+Sobald du auf einem Hub bist, kannst du nach Dateien suchen, stöbern, was andere teilen, und direkt von ihnen laden.
+
+## Suchen
+
+![Suche auf einem Hub in DC++](/img/getting-started/9_search.png)
+
+1. Klicke auf das Such-Symbol in der Symbolleiste, um einen Such-Tab zu öffnen.
+2. Gib ein, wonach du suchst. Mit den Filtern (Größe, Dateityp, Hubs) grenzt du die Treffer ein.
+3. Hier erscheinen die Treffer. Solange der Such-Tab offen bleibt, kommen weiter Ergebnisse herein.
 
 ## Eine Dateiliste durchsehen
 

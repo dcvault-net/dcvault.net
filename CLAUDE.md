@@ -12,7 +12,7 @@
 
 
 
-DCVault ist eine Community-Wissensbasis zum \*\*Direct-Connect-(DC++)-P2P-Netzwerk\*\*.
+DCVault ist eine Community-Wissensbasis zum \*\*Direct-Connect-Netzwerk (DC)\*\*.
 
 Dieses Repo ist die \*\*Landingpage + das Wiki\*\*, gebaut mit \*\*Docusaurus\*\* (statisch),
 
@@ -168,7 +168,7 @@ where to start.
 
 
 
-Never heard of it? Direct Connect (DC++) is a peer-to-peer network for sharing files and
+Never heard of it? Direct Connect (DC) is a peer-to-peer network for sharing files and
 
 chatting on community-run hubs.
 
@@ -228,7 +228,7 @@ hier zeigen wir dir, wo du am besten anfängst.
 
 
 
-Noch nie davon gehört? Direct Connect (DC++) ist ein Peer-to-Peer-Netzwerk zum Teilen von
+Noch nie davon gehört? Direct Connect (DC) ist ein Peer-to-Peer-Netzwerk zum Teilen von
 
 Dateien und zum Chatten auf von der Community betriebenen Hubs.
 
@@ -274,9 +274,9 @@ wächst mit der Community.
 
 
 
-\- \*\*EN:\*\* `DCVault is the community wiki for the Direct Connect (DC++) P2P network: guides on clients, hubs, the ADC/NMDC protocol and file sharing.`
+\- \*\*EN:\*\* `DCVault is the community wiki for the Direct Connect (DC) peer-to-peer network: guides on clients like DC++, hubs, the NMDC/ADC protocols and file sharing.`
 
-\- \*\*DE:\*\* `DCVault ist die Community-Wiki zum Direct-Connect-P2P-Netzwerk (DC++): Anleitungen zu Clients, Hubs, dem ADC/NMDC-Protokoll und Filesharing.`
+\- \*\*DE:\*\* `DCVault ist die Community-Wiki zum Direct-Connect-Netzwerk (DC): Anleitungen zu Clients wie DC++, Hubs, den Protokollen NMDC/ADC und Filesharing.`
 
 
 

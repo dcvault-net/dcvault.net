@@ -35,9 +35,9 @@ const CLIENTS: Client[] = [
   {name: 'DC++', win: true, linux: false, mac: false, ui: 'GUI', license: 'GPL-3', active: true, url: 'https://dcplusplus.sourceforge.io/'},
   {name: 'AirDC++', win: true, linux: true, mac: false, ui: 'GUI / Web UI', license: 'GPL-3', active: true, url: 'https://airdcpp.net/docs/installation/installation.html'},
   {name: 'FearDC', win: true, linux: false, mac: false, ui: 'GUI', license: 'GPL-3', active: true, url: 'https://client.feardc.net/'},
-  {name: 'Ncdc', win: true, linux: true, mac: true, ui: 'CLI / TUI', license: 'MIT', active: true, url: 'https://dev.yorhel.nl/ncdc'},
   {name: 'EiskaltDC++', win: true, linux: true, mac: true, ui: 'GUI', license: 'GPL-3', active: false, url: 'https://github.com/eiskaltdcpp/eiskaltdcpp#packages-and-installers'},
   {name: 'ApexDC++', win: true, linux: false, mac: false, ui: 'GUI', license: 'GPL-2', active: false, url: 'https://www.apexdc.net/download/'},
+  {name: 'Ncdc', win: true, linux: true, mac: true, ui: 'CLI / TUI', license: 'MIT', active: false, url: 'https://dev.yorhel.nl/ncdc'},
 ];
 
 function Bool({value, labels}: {value: boolean; labels: Labels}): ReactNode {

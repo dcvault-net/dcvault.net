@@ -15,14 +15,14 @@ const SECTIONS = [
 const TEXT = {
   en: {
     summary:
-      'Community wiki for the Direct Connect (DC++) peer-to-peer network: clients, hubs, the NMDC and ADC protocols, and file sharing. Available in English and German.',
+      'Community wiki for the Direct Connect (DC) peer-to-peer network: clients like DC++, hubs, the NMDC and ADC protocols, and file sharing. Available in English and German.',
     full: 'Full text of the DCVault wiki (English).',
     optional: 'Optional',
     forum: 'community discussion and support',
   },
   de: {
     summary:
-      'Community-Wiki zum Direct-Connect-(DC++)-Peer-to-Peer-Netzwerk: Clients, Hubs, die Protokolle NMDC und ADC und Filesharing. Verfügbar auf Englisch und Deutsch.',
+      'Community-Wiki zum Direct-Connect-Peer-to-Peer-Netzwerk (DC): Clients wie DC++, Hubs, die Protokolle NMDC und ADC und Filesharing. Verfügbar auf Englisch und Deutsch.',
     full: 'Volltext des DCVault-Wikis (Deutsch).',
     optional: 'Optional',
     forum: 'Community-Austausch und Support',
