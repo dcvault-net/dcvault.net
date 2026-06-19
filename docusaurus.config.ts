@@ -61,6 +61,8 @@ export default async function createConfig(): Promise<Config> {
 
     plugins: ['./src/plugins/llms.js'],
 
+    clientModules: ['./src/clientModules/matomo.ts'],
+
     themes: [
       [
         '@easyops-cn/docusaurus-search-local',
