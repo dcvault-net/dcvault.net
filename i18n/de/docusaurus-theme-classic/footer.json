@@ -43,6 +43,10 @@
     "message": "Mitmachen",
     "description": "The label of footer link with label=Contributing linking to /docs/community/contributing"
   },
+  "link.item.label.AI transparency": {
+    "message": "KI-Transparenz",
+    "description": "The label of footer link with label=AI transparency linking to /docs/community/ai-transparency"
+  },
   "link.item.label.GitHub": {
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/dcvault-net/dcvault.net"
