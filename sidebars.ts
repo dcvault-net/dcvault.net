@@ -73,6 +73,7 @@ const sidebars: SidebarsConfig = {
         'community/glossary',
         'community/contributing',
         'community/resources',
+        'community/ai-transparency',
         {
           type: 'link',
           label: 'Forum',

@@ -134,6 +134,7 @@ export default async function createConfig(): Promise<Config> {
               {label: 'FAQ', to: '/docs/community/faq'},
               {label: 'Glossary', to: '/docs/community/glossary'},
               {label: 'Contributing', to: '/docs/community/contributing'},
+              {label: 'AI transparency', to: '/docs/community/ai-transparency'},
             ],
           },
           {
