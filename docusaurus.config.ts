@@ -140,6 +140,7 @@ export default async function createConfig(): Promise<Config> {
             title: 'More',
             items: [
               {label: 'GitHub', href: 'https://github.com/dcvault-net/dcvault.net'},
+              {label: 'Status', href: 'https://status.dcvault.net/'},
             ],
           },
           {
