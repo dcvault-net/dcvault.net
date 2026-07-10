@@ -39,6 +39,7 @@ const HUBS: Hub[] = [
   {name: 'ADCH++', win: true, linux: true, nmdc: false, adc: true, scripting: 'Lua, Python', license: 'GPL-3', active: true, url: 'https://adchpp.sourceforge.io/'},
   {name: 'Luadch-ng', win: true, linux: true, nmdc: false, adc: true, scripting: 'Lua 5.4', license: 'GPL-3', active: true, url: 'https://luadch-ng.github.io/'},
   {name: 'uHub', win: true, linux: true, nmdc: false, adc: true, scripting: 'C', license: 'GPL-3', active: true, url: 'https://github.com/janvidar/uhub/'},
+  {name: 'JADCHub', win: true, linux: true, nmdc: false, adc: true, scripting: 'Java, YAML', license: 'GPL-3', active: true, url: 'https://gitlab.com/adchub/jadchub'},
   {name: 'PtokaX', win: true, linux: true, nmdc: true, adc: false, scripting: 'Lua', license: 'GPL-3', active: false, url: 'https://www.ptokax.org/'},
   {name: 'Luadch', win: true, linux: true, nmdc: false, adc: true, scripting: 'Lua', license: 'GPL-3', active: false, url: 'https://luadch.github.io/'},
   {name: 'FlexHub', win: true, linux: true, nmdc: true, adc: true, scripting: 'Lua', license: 'AGPL-3', active: false, url: 'https://drive.proton.me/urls/TXD22M2FZ4#pZ5wOLvcObWp'},
