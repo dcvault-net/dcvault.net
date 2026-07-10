@@ -1,0 +1,12 @@
+# Cloudflare Pages configuration for the dcvault-net project.
+# Docusaurus builds the static site into `build`; the Pages Functions in
+# `functions/` serve the hub-status API and read/write the D1 database below.
+name = "dcvault-net"
+pages_build_output_dir = "build"
+compatibility_date = "2025-06-01"
+
+# D1 binding consumed by functions/api/hub-status/* as env.DB
+[[d1_databases]]
+binding = "DB"
+database_name = "dcvault-hub-status"
+database_id = "3bb444ca-9f79-4d7c-8fcd-1ea2a7f5bc78"
