@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import {execSync} from 'child_process';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 // Exported as an async function so we can dynamically import the ESM-only
@@ -9,10 +10,30 @@ import type * as Preset from '@docusaurus/preset-classic';
 export default async function createConfig(): Promise<Config> {
   const tabBlocks = (await import('docusaurus-remark-plugin-tab-blocks')).default;
 
+  // Build identifier for the footer. Cloudflare Pages sets CF_PAGES_COMMIT_SHA
+  // on every deploy; locally we fall back to the current git HEAD.
+  const commitSha =
+    process.env.CF_PAGES_COMMIT_SHA ||
+    (() => {
+      try {
+        return execSync('git rev-parse HEAD', {stdio: ['ignore', 'pipe', 'ignore']})
+          .toString()
+          .trim();
+      } catch {
+        return '';
+      }
+    })();
+  const shortSha = commitSha.slice(0, 7);
+
   const config: Config = {
     title: 'DCVault',
     tagline: 'Your Community to Direct Connect',
     favicon: 'img/favicon.png',
+
+    customFields: {
+      buildSha: shortSha,
+      buildShaFull: commitSha,
+    },
 
     future: {
       v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -102,6 +123,12 @@ export default async function createConfig(): Promise<Config> {
             label: 'Forum',
             position: 'left',
             className: 'dcv-ico dcv-ico--forum',
+          },
+          {
+            to: '/docs/community/support-hub',
+            label: 'Support Hub',
+            position: 'left',
+            className: 'dcv-ico dcv-ico--chat',
           },
           {
             type: 'localeDropdown',

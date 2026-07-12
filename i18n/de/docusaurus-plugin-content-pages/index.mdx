@@ -6,6 +6,8 @@ hide_table_of_contents: true
 ---
 
 import {FeatureCards, FeatureCard, TopicGrid, TopicCard} from '@site/src/components/Home';
+import HubStatus from '@site/src/components/HubStatus';
+import ForumLatest from '@site/src/components/ForumLatest';
 
 <div className="dcv-hero">
   <img className="dcv-hero__logo" src="/img/logo-full.png" alt="DCVault" />
@@ -19,6 +21,22 @@ import {FeatureCards, FeatureCard, TopicGrid, TopicCard} from '@site/src/compone
   <FeatureCard title="Das Netzwerk nutzen" href="/docs/clients/choosing-a-client" cta="Einstieg für Nutzer" icon="share">Client einrichten, Hubs finden, Dateien teilen.</FeatureCard>
   <FeatureCard title="Einen Hub betreiben" href="/docs/hub/basics" cta="Einstieg für Hub-Betreiber" icon="server">Von der passenden Hub-Software bis zum Scripting.</FeatureCard>
 </FeatureCards>
+
+<HubStatus
+  compact
+  address="adcs://hub.dcvault.net:5001/?kp=SHA256/RLDEY2QBXXO27D33UHYK3BAFVCW6MNQINNYN4FFAP2RL2MNFLM6A"
+  pageHref="/de/docs/community/support-hub"
+  labels={{
+    heading: 'Support-Hub',
+    online: 'Online',
+    offline: 'Offline',
+    checking: 'Prüfe…',
+    unavailable: 'Status nicht verfügbar',
+    usersOnline: 'Nutzer online',
+    connect: 'Verbinden',
+    open: 'Zum Support-Hub',
+  }}
+/>
 
 ## Das Wiki erkunden
 
@@ -35,4 +53,18 @@ import {FeatureCards, FeatureCard, TopicGrid, TopicCard} from '@site/src/compone
 
 ## Mitreden und mitmachen
 
-Fragen und Austausch laufen im [Forum](https://forum.dcvault.net). Fehlt etwas oder ist etwas falsch? [Jeder kann mitschreiben](/de/docs/community/contributing), und dieses Wiki wächst mit der Community.
+Fehlt etwas oder ist etwas falsch? [Jeder kann mitschreiben](/de/docs/community/contributing), und dieses Wiki wächst mit der Community.
+
+<div className="dcv-community-row">
+  <ForumLatest
+    labels={{
+      heading: 'Neu im Forum',
+      viewAll: 'Zum Forum',
+      empty: 'Noch keine Themen',
+      unavailable: 'Forum nicht erreichbar',
+    }}
+  />
+  <FeatureCard title="Im Forum fragen" href="https://forum.dcvault.net" cta="Zum Forum" icon="users">
+    Fragen, Hilfe und Austausch mit anderen aus dem Netzwerk.
+  </FeatureCard>
+</div>

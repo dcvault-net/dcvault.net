@@ -1,0 +1,307 @@
+/* Live support-hub status card. Theme-aware via Infima variables; the brand
+   green (--ifm-color-primary) drives the chart and the connect button. */
+
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  background: var(--ifm-card-background-color, var(--ifm-background-surface-color));
+  padding: 1.25rem 1.4rem 1.4rem;
+  margin: 1.5rem 0;
+}
+
+/* Header row: badge + hub name + uptime */
+.head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hubName {
+  font-weight: 600;
+}
+
+.uptime {
+  margin-left: auto;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Status badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.badgeDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: currentColor;
+  flex: 0 0 auto;
+}
+
+.badgeOn {
+  color: #15803d;
+  background: rgba(34, 197, 94, 0.14);
+}
+.badgeOn .badgeDot {
+  animation: dcvPulse 1.8s ease-in-out infinite;
+}
+
+.badgeOff {
+  color: var(--ifm-color-emphasis-700);
+  background: var(--ifm-color-emphasis-200);
+}
+
+.badgeChecking {
+  color: #a16207;
+  background: rgba(234, 179, 8, 0.14);
+}
+
+[data-theme='dark'] .badgeOn {
+  color: #4ade80;
+  background: rgba(34, 197, 94, 0.16);
+}
+[data-theme='dark'] .badgeChecking {
+  color: #fbbf24;
+  background: rgba(234, 179, 8, 0.16);
+}
+
+@keyframes dcvPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+/* Big metric */
+.metric {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 0.9rem 0 0.2rem;
+}
+
+.number {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--ifm-color-primary);
+}
+
+.dim {
+  color: var(--ifm-color-emphasis-500);
+}
+
+.metricWord {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.95rem;
+}
+
+/* Connect row */
+.connectRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.8rem;
+  margin: 0.9rem 0 0.2rem;
+}
+
+.connect {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 8px;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.connect:hover {
+  background: var(--ifm-color-primary-dark);
+  color: #fff;
+  text-decoration: none;
+}
+[data-theme='dark'] .connect {
+  color: #10130a;
+}
+[data-theme='dark'] .connect:hover {
+  color: #10130a;
+}
+
+.connectHint {
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Address + copy */
+.addressRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.addressLabel {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.address {
+  flex: 1 1 16rem;
+  min-width: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 0.82rem;
+  padding: 0.35rem 0.55rem;
+}
+
+.copy {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: transparent;
+  color: var(--ifm-font-color-base);
+  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+.copy:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+/* Chart */
+.chartHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 1.2rem 0 0.5rem;
+}
+
+.chartTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.ranges {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.rangeBtn {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: transparent;
+  color: var(--ifm-color-emphasis-700);
+  border-radius: 6px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+.rangeActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.chart {
+  display: block;
+  width: 100%;
+  height: 120px;
+}
+
+.area {
+  fill: var(--ifm-color-primary);
+  opacity: 0.14;
+  stroke: none;
+}
+
+.line {
+  stroke: var(--ifm-color-primary);
+  stroke-width: 2;
+}
+
+.noData {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ifm-color-emphasis-500);
+  font-size: 0.9rem;
+  border: 1px dashed var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+}
+
+/* Compact card for the landing page */
+.compact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  background: var(--ifm-card-background-color, var(--ifm-background-surface-color));
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.compactMain {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem 0.9rem;
+}
+
+.compactTitle {
+  font-weight: 600;
+}
+
+.compactMetric {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.compactNumber {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--ifm-color-primary);
+}
+
+.compactWord {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.compactActions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
+}
+
+.compactLink {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
