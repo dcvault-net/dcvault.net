@@ -119,3 +119,39 @@
   --ifm-alert-background-color-highlight: rgba(255, 255, 255, 0.09);
   --ifm-alert-foreground-color: #e6e8ea;
 }
+
+/* Docusaurus appends an "opens in new tab" icon to external navbar links
+   (Forum, GitHub). The navbar is short and the destination is obvious, so
+   drop the icon there. Content links keep theirs. */
+.navbar svg[class*='iconExternalLink'] {
+  display: none;
+}
+
+/* Small build identifier under the footer copyright */
+.footer__version {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+.footer__version a {
+  color: inherit;
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+}
+.footer__version a:hover {
+  text-decoration: underline;
+}
+
+/* Two boxes side by side on the landing (latest forum topics + a CTA card) */
+.dcv-community-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+  align-items: stretch;
+}
+@media (max-width: 768px) {
+  .dcv-community-row {
+    grid-template-columns: 1fr;
+  }
+}

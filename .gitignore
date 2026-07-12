@@ -26,3 +26,6 @@ Thumbs.db
 # Editor folders
 .idea/
 *.swp
+
+# Cloudflare Wrangler (local dev state)
+.wrangler/
