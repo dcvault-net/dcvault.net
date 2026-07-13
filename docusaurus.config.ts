@@ -178,6 +178,7 @@ export default async function createConfig(): Promise<Config> {
               {label: 'DCHublist', href: 'https://dchublist.org/'},
               {label: 'Team Elite', href: 'https://www.te-home.net/'},
               {label: 'DC++ Blog', href: 'https://dcpp.wordpress.com/'},
+              {label: 'PWiAM Hublist', href: 'https://hublist.pwiam.com/en/'},
             ],
           },
         ],
