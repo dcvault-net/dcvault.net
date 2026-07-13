@@ -66,6 +66,40 @@ gehört NICHT in dieses Repo — nur darauf verlinken.
 
 
 
+## Aktueller Stand und Architektur (Stand Juli 2026)
+
+Der Brief oben (Aufgaben, Nav-Struktur, Landing-Texte) ist umgesetzt und bleibt als Referenz.
+Das Wiki ist live auf dcvault.net, zweisprachig, und deutlich gewachsen. Neue Arbeit immer
+gegen den aktuellen Code prüfen, nicht gegen diesen Brief.
+
+Repo-Struktur:
+- Inhalte: `docs/` (en) und `i18n/de/docusaurus-plugin-content-docs/current/` (de). Sidebar
+  explizit in `sidebars.ts`, Navbar/Footer in `docusaurus.config.ts`, UI-Übersetzungen in
+  `i18n/de/docusaurus-theme-classic/*.json`.
+- Landing: `src/pages/index.mdx` (en) und `i18n/de/docusaurus-plugin-content-pages/index.mdx`
+  (de), mit Karten aus `src/components/Home`.
+- Komponenten (`src/components/`, sprachneutral, i18n über `labels`-Props): `Home`,
+  `ClientTable`, `HubTable`, `Glossary`, `HubStatus` (Live-Hub-Status, User-Graph,
+  adcs-Connect), `ForumLatest` (neueste Forum-Themen mit Avataren).
+- Swizzles: `src/theme/Root.tsx` (JSON-LD), `src/theme/Footer/Copyright` (Deploy-Commit im
+  Footer). Nav-/Sidebar-Icons als CSS-Masken in `src/css/nav-icons.css`.
+- Analytics: cookieloses Matomo (`m.dcvault.net`) via `src/clientModules/matomo.ts`.
+- Build-Plugin `src/plugins/llms.js` erzeugt `llms.txt`/`llms-full.txt` pro Locale; ein
+  tab-blocks Remark-Plugin macht `docusaurus.config.ts` zur async-Funktion.
+
+Cloudflare Pages Functions (`functions/`, deployen mit der Seite):
+- `POST/GET /api/hub-status`: Empfänger für den Live-Status des Support-Hubs. D1-Datenbank
+  `dcvault-hub-status` (Binding `DB` in `wrangler.toml`), Secret `HUB_STATUS_TOKEN`.
+- `GET /api/forum-latest`: proxyt `forum.dcvault.net/latest.json` (Edge-Cache).
+- Siehe `functions/README.md`. Der Hub und sein Push-Plugin liegen im luadch-ng-Repo, nicht hier.
+
+Arbeiten:
+- Lokal: `npm run start` (ein Locale) oder `npm run build && npm run serve`.
+- `npm run build` baut beide Locales und wirft bei toten internen Links (`onBrokenLinks: throw`).
+- Functions lokal: `npx wrangler pages dev build` (lokale D1; `npx wrangler d1 execute
+  dcvault-hub-status --local` zum Seeden). `.wrangler/` ist gitignored.
+- Deploy: Push auf `main`, Cloudflare baut automatisch. Local-first, Branch/PR/Merge.
+
 \## Aufgaben für Claude Code
 
 
