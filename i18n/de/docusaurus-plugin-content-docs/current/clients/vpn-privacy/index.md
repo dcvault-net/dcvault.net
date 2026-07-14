@@ -2,6 +2,7 @@
 title: "VPN & Privatsphäre"
 description: "Worauf du bei Privatsphäre in Direct Connect achtest und wie ein VPN dein Setup verändert."
 sidebar_position: 8
+slug: /clients/vpn-privacy
 ---
 
 Standardmäßig sehen andere im Netzwerk mehr, als du vielleicht denkst. Diese Seite zeigt, was sichtbar ist, wie ein VPN hilft, worauf du achten musst und wie sich die Rechtsdurchsetzung je Land unterscheidet.
@@ -28,7 +29,7 @@ Direct Connect braucht für Active Mode rund drei Ports: TCP für Übertragungen
 
 _Die folgenden Links sind Referral-Links, die DCVault unterstützen._
 
-- [AirVPN](https://airvpn.org/?referred_by=746001) lässt dich bis zu fünf Ports freigeben, das passt gut zu Direct Connect. Getestet und funktioniert. Unser Tipp.
+- [AirVPN](https://airvpn.org/?referred_by=746001) lässt dich bis zu fünf Ports freigeben, das passt gut zu Direct Connect. Getestet und funktioniert. Unser Tipp, dazu gibt es einen ausführlichen [AirVPN-Guide](/de/docs/clients/vpn-privacy/airvpn).
 - [Hide.me](https://ref.hide.io/EPmoZN) öffnet Ports automatisch über UPnP. Getestet und funktioniert.
 
 ## Rechtsdurchsetzung je Land
