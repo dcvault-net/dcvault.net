@@ -34,7 +34,12 @@ const sidebars: SidebarsConfig = {
         'clients/finding-joining-hubs',
         'clients/searching-downloading',
         'clients/active-vs-passive-mode',
-        'clients/vpn-privacy',
+        {
+          type: 'category',
+          label: 'VPN & Privacy',
+          link: {type: 'doc', id: 'clients/vpn-privacy/index'},
+          items: ['clients/vpn-privacy/airvpn'],
+        },
       ],
     },
     {

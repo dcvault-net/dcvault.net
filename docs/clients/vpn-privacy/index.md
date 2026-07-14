@@ -2,6 +2,7 @@
 title: "VPN & privacy"
 description: "Privacy on Direct Connect and how a VPN changes your setup."
 sidebar_position: 8
+slug: /clients/vpn-privacy
 ---
 
 By default, other people on the network can see more than you might expect. This page covers what is visible, how a VPN helps, what to watch for, and how copyright enforcement differs by country.
@@ -28,7 +29,7 @@ Direct Connect needs about three ports for active mode: TCP for transfers, TCP f
 
 _The links below are referral links that help support DCVault._
 
-- [AirVPN](https://airvpn.org/?referred_by=746001) lets you forward up to five ports, which suits Direct Connect well. Tested and working. This is our pick.
+- [AirVPN](https://airvpn.org/?referred_by=746001) lets you forward up to five ports, which suits Direct Connect well. Tested and working. This is our pick, and there is a full [AirVPN setup guide](/docs/clients/vpn-privacy/airvpn).
 - [Hide.me](https://ref.hide.io/EPmoZN) opens ports automatically through UPnP. Tested and working.
 
 ## Copyright enforcement by country

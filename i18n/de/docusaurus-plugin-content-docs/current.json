@@ -11,6 +11,10 @@
     "message": "Clients & Nutzung",
     "description": "The label for category 'Clients & Usage' in sidebar 'wiki'"
   },
+  "sidebar.wiki.category.VPN & Privacy": {
+    "message": "VPN & Privatsphäre",
+    "description": "The label for category 'VPN & Privacy' in sidebar 'wiki'"
+  },
   "sidebar.wiki.category.Running a Hub": {
     "message": "Hub betreiben",
     "description": "The label for category 'Running a Hub' in sidebar 'wiki'"
