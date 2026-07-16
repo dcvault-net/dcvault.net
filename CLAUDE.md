@@ -100,6 +100,30 @@ Arbeiten:
   dcvault-hub-status --local` zum Seeden). `.wrangler/` ist gitignored.
 - Deploy: Push auf `main`, Cloudflare baut automatisch. Local-first, Branch/PR/Merge.
 
+## SEO-Konventionen für neue Seiten
+
+„Direct Connect" allein ist als Keyword mehrdeutig (AWS Direct Connect), deshalb muss sich
+jede Seite über qualifizierende Begriffe abgrenzen. Gilt in beiden Sprachen gleich.
+
+Frontmatter jeder Doc-Seite:
+- `title`: 40 bis 50 Zeichen (Docusaurus hängt „ | DCVault" an, in der SERP sind 50 bis 60
+  das Ziel). Enthält einen qualifizierenden Begriff: DC++, Hub, NMDC, ADC, Client, Hubliste.
+- `sidebar_label`: der kurze Navigationstext. Fehlt er, wandert der lange `title` in Sidebar,
+  Breadcrumbs und Prev/Next.
+- `description`: 140 bis 160 Zeichen, pro Seite eigen.
+
+„P2P" und „Filesharing" nur auf den Einstiegsseiten (Startseite, „Was ist Direct Connect?").
+Auf Tiefen-Seiten verdrängen diese breiten Begriffe den spezifischen, der dort das eigentliche
+Kapital ist, und ziehen Besucher mit falscher Absicht an.
+
+Auf den Landingpages ist der Frontmatter-`title` nur der SERP-Titel, das sichtbare H1 steht
+separat im MDX-Body. Beides lässt sich unabhängig ändern.
+
+Steht bereits und bitte erhalten: `static/robots.txt` nennt beide Sitemaps, auch die deutsche
+unter `/de/sitemap.xml` (Docusaurus baut pro Locale eine eigene, einen Sitemap-Index gibt es
+nicht). `/search` ist über `sitemap.ignorePatterns` aus beiden ausgeschlossen. hreflang
+(en/de/x-default), Canonicals und JSON-LD pro Locale entstehen automatisch.
+
 \## Aufgaben für Claude Code
 
 
