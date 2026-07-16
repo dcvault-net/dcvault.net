@@ -1,6 +1,7 @@
 ---
-title: "Installation & Konfiguration"
-description: "Hub-Software installieren und die wichtigsten Einstellungen vornehmen."
+title: "Direct-Connect-Hub installieren & konfigurieren"
+sidebar_label: "Installation & Konfiguration"
+description: "Hub-Software installieren und die Kernkonfiguration durchgehen: Ports und Erreichbarkeit, Hub-Name und Adresse, Nutzerlimits, TLS und das Admin-Konto."
 sidebar_position: 3
 ---
 

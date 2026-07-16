@@ -1,6 +1,7 @@
 ---
-title: "Client auswählen"
-description: "Wie du einen Direct-Connect-Client für dein System und deine Nutzung auswählst."
+title: "Direct-Connect-Client auswählen (DC++ & Co.)"
+sidebar_label: "Client auswählen"
+description: "Wie du einen Direct-Connect-Client für Windows, Linux oder macOS auswählst, welche Funktionen zählen und wann DC++, AirDC++ oder EiskaltDC++ passt."
 sidebar_position: 1
 ---
 

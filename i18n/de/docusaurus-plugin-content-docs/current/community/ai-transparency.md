@@ -1,6 +1,7 @@
 ---
-title: "KI-Transparenz"
-description: "Wie DCVault entsteht und wobei KI-Werkzeuge geholfen haben."
+title: "KI-Transparenz: wie DCVault entsteht"
+sidebar_label: "KI-Transparenz"
+description: "Wie DCVault entsteht und wobei KI-Werkzeuge geholfen haben: unser Vorgehen beim Schreiben und Prüfen der Inhalte, offen benannt statt versteckt."
 sidebar_position: 5
 ---
 

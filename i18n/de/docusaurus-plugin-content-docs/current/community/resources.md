@@ -1,6 +1,7 @@
 ---
-title: "Community-Ressourcen"
-description: "Kuratierte Links zu Webseiten und Projekten, die zum Direct-Connect-Netzwerk beitragen."
+title: "Direct-Connect-Links: Hublisten, Clients, Hubs"
+sidebar_label: "Community-Ressourcen"
+description: "Eine Sammlung von Direct-Connect-Links: Hublisten, Community-Foren, Clients, Hub-Software sowie Bots und Tools, inklusive archivierter Projekte."
 sidebar_position: 4
 ---
 

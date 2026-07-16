@@ -1,6 +1,7 @@
 ---
-title: "Choosing a client"
-description: "How to pick a Direct Connect client for your platform and the way you want to use the network."
+title: "How to choose a Direct Connect (DC++) client"
+sidebar_label: "Choosing a client"
+description: "How to pick a Direct Connect client for Windows, Linux, or macOS, which features matter, and when DC++, AirDC++, or EiskaltDC++ is the better fit."
 sidebar_position: 1
 ---
 

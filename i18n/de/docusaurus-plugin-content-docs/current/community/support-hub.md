@@ -1,6 +1,7 @@
 ---
-title: "Support-Hub"
-description: "Der DCVault-Community-Hub im Direct-Connect-Netz: Live-Status, Nutzerzahl und wie du dich verbindest."
+title: "DCVault-Support-Hub: Live-Status & Verbindung"
+sidebar_label: "Support-Hub"
+description: "Der DCVault-Community-Hub im Direct-Connect-Netz: Live-Status, aktuelle Nutzerzahl, Verlaufsgraph und die Adresse, mit der du dich im Client verbindest."
 sidebar_position: 6
 hide_table_of_contents: true
 ---

@@ -1,6 +1,7 @@
 ---
-title: "Was ist Direct Connect?"
-description: "Eine kurze Einführung in Direct Connect (DC), das Peer-to-Peer-Netzwerk zum Teilen von Dateien und Chatten auf Community-Hubs, und wie es sich zum Client DC++ verhält."
+title: "Was ist Direct Connect? P2P-Filesharing erklärt"
+sidebar_label: "Was ist Direct Connect?"
+description: "Eine kurze Einführung in Direct Connect (DC), das Peer-to-Peer-Netzwerk zum Teilen von Dateien und Chatten auf Community-Hubs, und wie DC++ dazu passt."
 sidebar_position: 1
 ---
 

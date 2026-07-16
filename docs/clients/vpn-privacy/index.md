@@ -1,6 +1,6 @@
 ---
-title: "VPN & privacy"
-description: "Privacy on Direct Connect and how a VPN changes your setup."
+title: "VPN and privacy on Direct Connect"
+description: "What the hub and other users can see on Direct Connect, how a VPN changes that, why port forwarding matters, and how enforcement differs by country."
 sidebar_position: 8
 slug: /clients/vpn-privacy
 ---

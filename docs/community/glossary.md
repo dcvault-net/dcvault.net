@@ -1,6 +1,7 @@
 ---
-title: "Glossary"
-description: "Definitions of common Direct Connect terms and abbreviations."
+title: "Direct Connect glossary: DC terms explained"
+sidebar_label: "Glossary"
+description: "Definitions of common Direct Connect terms and abbreviations, from hub, share, and slot to NMDC, ADC, TTH, and active mode, in plain language."
 sidebar_position: 2
 ---
 

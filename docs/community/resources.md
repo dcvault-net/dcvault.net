@@ -1,6 +1,7 @@
 ---
-title: "Community resources"
-description: "Curated links to websites and projects that contribute to the Direct Connect network."
+title: "Direct Connect links: hublists, clients, hubs"
+sidebar_label: "Community resources"
+description: "A directory of Direct Connect links: hublists, community forums, clients, hub software, and bots and tools, including archived projects on the Wayback Machine."
 sidebar_position: 4
 ---
 

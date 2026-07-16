@@ -1,6 +1,7 @@
 ---
-title: "ADC protocol"
-description: "The modern ADC protocol, its design, and how it differs from NMDC."
+title: "ADC protocol: the modern Direct Connect"
+sidebar_label: "ADC protocol"
+description: "The modern ADC protocol for Direct Connect: its design, how it differs from NMDC, its command structure, and extensions such as HBRI for IPv4 and IPv6."
 sidebar_position: 2
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: "Finding & joining hubs"
-description: "Find Direct Connect hubs through hublists and join them in your client."
+title: "Finding and joining Direct Connect hubs"
+sidebar_label: "Finding & joining hubs"
+description: "Find Direct Connect hubs through hublists like DCHublist, add them to your favorites, and join them in your client with the right address and port."
 sidebar_position: 5
 ---
 

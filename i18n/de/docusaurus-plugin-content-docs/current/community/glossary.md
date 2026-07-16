@@ -1,6 +1,7 @@
 ---
-title: "Glossar"
-description: "Erklärungen gängiger Begriffe und Abkürzungen rund um Direct Connect."
+title: "Direct-Connect-Glossar: DC-Begriffe erklärt"
+sidebar_label: "Glossar"
+description: "Erklärungen gängiger Direct-Connect-Begriffe und Abkürzungen, von Hub, Share und Slot bis NMDC, ADC, TTH und Active Mode, in einfacher Sprache."
 sidebar_position: 2
 ---
 

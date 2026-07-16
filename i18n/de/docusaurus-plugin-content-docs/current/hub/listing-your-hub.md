@@ -1,6 +1,7 @@
 ---
-title: "Hub eintragen"
-description: "Deinen Hub in Hublisten eintragen, damit andere ihn finden."
+title: "Hub in Direct-Connect-Hublisten eintragen"
+sidebar_label: "Hub eintragen"
+description: "Wie Direct-Connect-Hublisten funktionieren und wie du deinen Hub dort einträgst, damit Nutzer die Adresse finden, ohne dass du selbst Werbung machst."
 sidebar_position: 6
 ---
 

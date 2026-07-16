@@ -1,6 +1,7 @@
 ---
-title: "TTH & Hashing"
-description: "Wie Tiger Tree Hashing Dateien identifiziert und Downloads in Direct Connect prüft."
+title: "TTH und Hashing in Direct Connect erklärt"
+sidebar_label: "TTH & Hashing"
+description: "Wie Tiger Tree Hashing (TTH) Dateien in Direct Connect identifiziert, Downloads prüft und Clients dieselbe Datei bei vielen Nutzern finden lässt."
 sidebar_position: 3
 ---
 

@@ -76,6 +76,11 @@ export default async function createConfig(): Promise<Config> {
           theme: {
             customCss: ['./src/css/custom.css', './src/css/nav-icons.css'],
           },
+          sitemap: {
+            // The local-search page has no indexing value; keep it out of both
+            // locale sitemaps.
+            ignorePatterns: ['/search', '/de/search'],
+          },
         } satisfies Preset.Options,
       ],
     ],

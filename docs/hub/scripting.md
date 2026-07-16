@@ -1,6 +1,7 @@
 ---
-title: "Scripting"
-description: "Extend a Direct Connect hub with scripts for automation and custom features."
+title: "Scripting a Direct Connect hub: bots and Lua"
+sidebar_label: "Scripting"
+description: "Extend a Direct Connect hub with scripts: bots, automation, and custom commands. Lua is the common language across PtokaX, Verlihub, ADCH++, and Luadch."
 sidebar_position: 4
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: "Scripting"
-description: "Einen Direct-Connect-Hub mit Skripten für Automatisierung und eigene Funktionen erweitern."
+title: "Direct-Connect-Hub scripten: Bots und Lua"
+sidebar_label: "Scripting"
+description: "Einen Direct-Connect-Hub mit Skripten erweitern: Bots, Automatisierung und eigene Befehle. Lua ist bei PtokaX, Verlihub, ADCH++ und Luadch verbreitet."
 sidebar_position: 4
 ---
 

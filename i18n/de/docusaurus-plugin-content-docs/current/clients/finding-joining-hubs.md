@@ -1,6 +1,7 @@
 ---
-title: "Hubs finden & beitreten"
-description: "Direct-Connect-Hubs über Hublisten finden und im Client betreten."
+title: "Direct-Connect-Hubs finden und beitreten"
+sidebar_label: "Hubs finden & beitreten"
+description: "Direct-Connect-Hubs über Hublisten wie DCHublist finden, zu den Favoriten hinzufügen und im Client mit der richtigen Adresse und dem Port betreten."
 sidebar_position: 5
 ---
 

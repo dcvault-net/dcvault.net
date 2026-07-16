@@ -1,6 +1,7 @@
 ---
-title: "Listing your hub"
-description: "Register your hub on hublists so people can find it."
+title: "Listing your hub on Direct Connect hublists"
+sidebar_label: "Listing your hub"
+description: "How Direct Connect hublists work and how to register your hub on them, so users can find your address instead of you having to advertise it."
 sidebar_position: 6
 ---
 
