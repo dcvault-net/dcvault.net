@@ -1,6 +1,7 @@
 ---
-title: "FAQ"
-description: "Antworten auf häufige Fragen zu Direct Connect und DCVault."
+title: "Direct-Connect-FAQ: häufige Fragen"
+sidebar_label: "FAQ"
+description: "Antworten auf häufige Fragen zu Direct Connect und DCVault: wie das Netzwerk arbeitet, was du zum Mitmachen brauchst und wie es sich zu anderem Sharing verhält."
 sidebar_position: 1
 ---
 

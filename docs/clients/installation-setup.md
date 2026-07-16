@@ -1,6 +1,7 @@
 ---
-title: "Installation & setup"
-description: "Install a Direct Connect client and complete the first-run configuration."
+title: "Install and set up a Direct Connect client"
+sidebar_label: "Installation & setup"
+description: "Install a Direct Connect client and work through the first run: nick, connection settings, download folder, and the share you want to offer the hub."
 sidebar_position: 3
 ---
 

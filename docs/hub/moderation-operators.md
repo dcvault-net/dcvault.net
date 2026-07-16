@@ -1,6 +1,7 @@
 ---
-title: "Moderation & operators"
-description: "Operator roles, moderation tools, and keeping a hub healthy."
+title: "Moderation and operators on a Direct Connect hub"
+sidebar_label: "Moderation & operators"
+description: "Operator roles and user classes on a Direct Connect hub, the moderation tools you get, and how clear rules keep a community healthy over time."
 sidebar_position: 5
 ---
 

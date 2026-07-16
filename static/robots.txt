@@ -3,3 +3,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://dcvault.net/sitemap.xml
+Sitemap: https://dcvault.net/de/sitemap.xml

@@ -1,6 +1,7 @@
 ---
-title: "Active- vs. Passive-Mode"
-description: "Der Unterschied zwischen Active- und Passive-Mode in Direct Connect und wie du beide einrichtest."
+title: "Active- vs. Passive-Mode in Direct Connect"
+sidebar_label: "Active- vs. Passive-Mode"
+description: "Der Unterschied zwischen Active- und Passive-Mode in Direct Connect, welche Ports du freigeben musst und warum der Passive Mode deine Suche einschränkt."
 sidebar_position: 7
 ---
 

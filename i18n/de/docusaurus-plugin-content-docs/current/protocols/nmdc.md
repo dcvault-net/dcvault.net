@@ -1,6 +1,7 @@
 ---
-title: "NMDC-Protokoll"
-description: "Das ursprüngliche Direct-Connect-Protokoll (NMDC) und wie es funktioniert."
+title: "NMDC-Protokoll: das ursprüngliche Direct Connect"
+sidebar_label: "NMDC-Protokoll"
+description: "Das ursprüngliche Direct-Connect-Protokoll (NMDC): wie seine Befehle arbeiten, warum es weiterhin verbreitet ist und welche Grenzen zu ADC führten."
 sidebar_position: 1
 ---
 

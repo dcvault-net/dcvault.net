@@ -1,6 +1,7 @@
 ---
-title: "AI transparency"
-description: "How DCVault is made, and where AI tools helped."
+title: "AI transparency: how DCVault is written"
+sidebar_label: "AI transparency"
+description: "How DCVault is made and where AI tools helped: our approach to writing and reviewing the wiki, and why we state it openly instead of hiding it."
 sidebar_position: 5
 ---
 

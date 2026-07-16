@@ -1,6 +1,7 @@
 ---
-title: "Installation & Einrichtung"
-description: "Einen Direct-Connect-Client installieren und die erste Konfiguration abschließen."
+title: "Direct-Connect-Client installieren & einrichten"
+sidebar_label: "Installation & Einrichtung"
+description: "Einen Direct-Connect-Client installieren und die erste Einrichtung abschließen: Nick, Verbindungseinstellungen, Download-Ordner und deine Freigabe."
 sidebar_position: 3
 ---
 

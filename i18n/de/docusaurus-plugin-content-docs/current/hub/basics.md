@@ -1,6 +1,7 @@
 ---
-title: "Hub-Grundlagen"
-description: "Was ein Direct-Connect-Hub ist und was es bedeutet, einen zu betreiben."
+title: "Einen Direct-Connect-Hub betreiben: Grundlagen"
+sidebar_label: "Hub-Grundlagen"
+description: "Was ein Direct-Connect-Hub ist, was der Betrieb wirklich bedeutet, was du dafür brauchst und welche Pflege und Sicherheit mit der Größe dazukommen."
 sidebar_position: 1
 ---
 

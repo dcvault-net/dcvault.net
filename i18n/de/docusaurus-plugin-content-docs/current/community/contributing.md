@@ -1,6 +1,7 @@
 ---
-title: "Mitmachen"
-description: "Wie du über GitHub zum DCVault-Wiki beiträgst."
+title: "Mitmachen: zum DCVault-Wiki beitragen"
+sidebar_label: "Mitmachen"
+description: "Wie du über GitHub zum DCVault-Wiki beiträgst: einen Link vorschlagen, einen Fehler korrigieren oder eine Seite schreiben, auf Deutsch und Englisch."
 sidebar_position: 3
 ---
 

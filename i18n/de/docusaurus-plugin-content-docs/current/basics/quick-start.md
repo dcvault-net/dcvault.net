@@ -1,6 +1,7 @@
 ---
-title: "Schnellstart"
-description: "In wenigen Schritten auf einen Direct-Connect-Hub: Client wählen, Freigabe einrichten, ersten Hub betreten."
+title: "Direct-Connect-Schnellstart: dein erster Hub"
+sidebar_label: "Schnellstart"
+description: "In wenigen Schritten auf einen Direct-Connect-Hub: Client wie DC++ wählen, installieren, Freigabe einrichten und ohne Konto den ersten Hub betreten."
 sidebar_position: 3
 ---
 

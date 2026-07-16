@@ -1,6 +1,7 @@
 ---
-title: "Magnet links"
-description: "How magnet links work in Direct Connect and how to use them."
+title: "Magnet links in Direct Connect explained"
+sidebar_label: "Magnet links"
+description: "How magnet links work in Direct Connect, what the TTH inside them means, and how to use them to point someone at an exact file rather than a filename."
 sidebar_position: 4
 ---
 

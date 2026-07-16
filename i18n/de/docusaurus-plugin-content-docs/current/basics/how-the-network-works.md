@@ -1,6 +1,7 @@
 ---
-title: "Wie das Netzwerk funktioniert"
-description: "Wie Hubs, Clients und Peers in Direct Connect verbunden sind und was bei Suche und Download passiert."
+title: "Wie das Direct-Connect-Netzwerk funktioniert"
+sidebar_label: "Wie das Netzwerk funktioniert"
+description: "Wie Hubs, Clients und Peers in Direct Connect zusammenspielen, was bei Suche und Download passiert und warum der Hub deine Dateien nie selbst überträgt."
 sidebar_position: 2
 ---
 

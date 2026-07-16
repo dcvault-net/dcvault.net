@@ -1,6 +1,7 @@
 ---
-title: "Hub-Software"
-description: "Ein Überblick über Direct-Connect-Hub-Software wie Verlihub, PtokaX, ADCH++ und weitere."
+title: "Direct-Connect-Hub-Software im Vergleich"
+sidebar_label: "Hub-Software"
+description: "Direct-Connect-Hub-Software im Vergleich: Verlihub, PtokaX, ADCH++, Luadch-ng und mehr, mit Plattform, NMDC- oder ADC-Support, Scripting und Lizenz."
 sidebar_position: 2
 hide_table_of_contents: true
 ---

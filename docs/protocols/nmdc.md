@@ -1,6 +1,7 @@
 ---
-title: "NMDC protocol"
-description: "The original Direct Connect protocol (NMDC) and how it works."
+title: "NMDC protocol: the original Direct Connect"
+sidebar_label: "NMDC protocol"
+description: "The original Direct Connect protocol (NMDC): how its commands work, why it is still widespread, and the limits that led to the newer ADC protocol."
 sidebar_position: 1
 ---
 

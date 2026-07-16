@@ -1,7 +1,7 @@
 ---
-title: "AirVPN setup for DC++"
+title: "AirVPN setup for DC++: ports and active mode"
 sidebar_label: "AirVPN"
-description: "Set up AirVPN with DC++: install Eddie, forward the three ports Direct Connect needs, and switch DC++ to active mode."
+description: "Set up AirVPN with DC++: install Eddie, forward the three ports Direct Connect needs for transfers and search, and switch DC++ into active mode."
 sidebar_position: 1
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: "Support hub"
-description: "The DCVault community hub on Direct Connect: live status, user count, and how to connect."
+title: "DCVault support hub: live status and connect"
+sidebar_label: "Support hub"
+description: "The DCVault community hub on Direct Connect: live online status, current user count, a usage graph, and the address to connect with your DC client."
 sidebar_position: 6
 hide_table_of_contents: true
 ---

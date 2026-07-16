@@ -1,6 +1,7 @@
 ---
-title: "Contributing"
-description: "How to contribute to the DCVault wiki through GitHub."
+title: "Contributing to the DCVault wiki"
+sidebar_label: "Contributing"
+description: "How to contribute to the DCVault wiki through GitHub: suggest a link, fix a mistake, or write a page, in English and German, via a pull request."
 sidebar_position: 3
 ---
 

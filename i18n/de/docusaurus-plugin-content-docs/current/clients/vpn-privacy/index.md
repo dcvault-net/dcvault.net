@@ -1,6 +1,6 @@
 ---
-title: "VPN & Privatsphäre"
-description: "Worauf du bei Privatsphäre in Direct Connect achtest und wie ein VPN dein Setup verändert."
+title: "VPN und Privatsphäre in Direct Connect"
+description: "Was Hub und andere Nutzer in Direct Connect sehen, wie ein VPN das ändert, warum Portfreigabe wichtig ist und wie die Rechtsdurchsetzung je Land abweicht."
 sidebar_position: 8
 slug: /clients/vpn-privacy
 ---

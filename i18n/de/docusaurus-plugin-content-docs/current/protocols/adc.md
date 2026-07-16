@@ -1,6 +1,7 @@
 ---
-title: "ADC-Protokoll"
-description: "Das moderne ADC-Protokoll, sein Aufbau und die Unterschiede zu NMDC."
+title: "ADC-Protokoll: das moderne Direct Connect"
+sidebar_label: "ADC-Protokoll"
+description: "Das moderne ADC-Protokoll für Direct Connect: sein Aufbau, die Unterschiede zu NMDC, die Befehlsstruktur und Erweiterungen wie HBRI für IPv4 und IPv6."
 sidebar_position: 2
 ---
 

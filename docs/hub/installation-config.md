@@ -1,6 +1,7 @@
 ---
-title: "Installation & config"
-description: "Install hub software and work through the core configuration."
+title: "Install and configure a Direct Connect hub"
+sidebar_label: "Installation & config"
+description: "Install hub software and work through the core configuration: ports and reachability, hub name and address, user limits, TLS, and the admin account."
 sidebar_position: 3
 ---
 

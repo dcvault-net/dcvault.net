@@ -1,6 +1,7 @@
 ---
-title: "Hub basics"
-description: "What a Direct Connect hub is and what running one involves."
+title: "Running a Direct Connect hub: the basics"
+sidebar_label: "Hub basics"
+description: "What a Direct Connect hub is, what running one actually involves, what you need to get started, and the maintenance and security that come with it."
 sidebar_position: 1
 ---
 

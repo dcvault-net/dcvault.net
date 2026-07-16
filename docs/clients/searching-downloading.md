@@ -1,6 +1,7 @@
 ---
-title: "Searching & downloading"
-description: "Search across a hub and download files from other users."
+title: "Searching and downloading on Direct Connect"
+sidebar_label: "Searching & downloading"
+description: "Search across a Direct Connect hub, read the results, queue downloads from other users, and understand why active mode returns far more hits."
 sidebar_position: 6
 ---
 

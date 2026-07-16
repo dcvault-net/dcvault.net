@@ -1,6 +1,7 @@
 ---
-title: "Sharing files"
-description: "Configure your share, build the file list, and understand how hashing works."
+title: "Sharing files on a Direct Connect hub"
+sidebar_label: "Sharing files"
+description: "Configure your share in a Direct Connect client, let it build and hash the file list, and understand what other users on the hub can actually see."
 sidebar_position: 4
 ---
 

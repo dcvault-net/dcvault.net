@@ -1,6 +1,7 @@
 ---
-title: "Suchen & herunterladen"
-description: "Auf einem Hub suchen und Dateien von anderen Nutzern herunterladen."
+title: "In Direct Connect suchen und herunterladen"
+sidebar_label: "Suchen & herunterladen"
+description: "Auf einem Direct-Connect-Hub suchen, Treffer lesen, Downloads von anderen Nutzern einreihen und verstehen, warum der Active Mode deutlich mehr liefert."
 sidebar_position: 6
 ---
 

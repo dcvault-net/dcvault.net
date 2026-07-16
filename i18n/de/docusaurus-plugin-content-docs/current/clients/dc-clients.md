@@ -1,6 +1,7 @@
 ---
-title: "DC-Clients"
-description: "Ein Überblick über gängige Direct-Connect-Clients wie DC++, AirDC++ und weitere."
+title: "DC-Clients im Vergleich: DC++, AirDC++ & Co."
+sidebar_label: "DC-Clients"
+description: "Ein Überblick über Direct-Connect-Clients wie DC++, AirDC++, EiskaltDC++ und FlylinkDC++, mit Plattform, Protokoll-Unterstützung und Pflegezustand."
 sidebar_position: 2
 hide_table_of_contents: true
 ---

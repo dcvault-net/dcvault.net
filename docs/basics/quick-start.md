@@ -1,6 +1,7 @@
 ---
-title: "Quick start"
-description: "Get onto a Direct Connect hub in a few steps: pick a client, set up sharing, and join your first hub."
+title: "Direct Connect quick start: join your first hub"
+sidebar_label: "Quick start"
+description: "Get onto a Direct Connect hub in a few steps: pick a client like DC++, install it, set up your share, and join your first hub without any account."
 sidebar_position: 3
 ---
 

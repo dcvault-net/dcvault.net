@@ -1,6 +1,7 @@
 ---
-title: "Moderation & Operators"
-description: "Operator-Rollen, Werkzeuge zur Moderation und wie ein Hub gesund bleibt."
+title: "Moderation und Operators im Direct-Connect-Hub"
+sidebar_label: "Moderation & Operators"
+description: "Operator-Rollen und Nutzerklassen im Direct-Connect-Hub, welche Moderationswerkzeuge es gibt und wie klare Regeln eine Community gesund halten."
 sidebar_position: 5
 ---
 

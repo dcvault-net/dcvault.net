@@ -1,6 +1,7 @@
 ---
-title: "Dateien teilen"
-description: "Freigabe einrichten, Dateiliste erstellen und verstehen, wie Hashing funktioniert."
+title: "Dateien in Direct Connect teilen"
+sidebar_label: "Dateien teilen"
+description: "Freigabe im Direct-Connect-Client einrichten, die Dateiliste erstellen und hashen lassen und verstehen, was andere Nutzer im Hub davon sehen können."
 sidebar_position: 4
 ---
 
