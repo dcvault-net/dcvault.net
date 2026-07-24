@@ -120,10 +120,12 @@
   --ifm-alert-foreground-color: #e6e8ea;
 }
 
-/* Docusaurus appends an "opens in new tab" icon to external navbar links
-   (Forum, GitHub). The navbar is short and the destination is obvious, so
-   drop the icon there. Content links keep theirs. */
-.navbar svg[class*='iconExternalLink'] {
+/* Docusaurus appends an "opens in new tab" icon to external links in the
+   navbar and footer (Forum, GitHub, Status, the Friends column). Those
+   destinations are obvious, and the Mastodon footer link is raw HTML with no
+   icon, so drop them there for consistency. Content links keep theirs. */
+.navbar svg[class*='iconExternalLink'],
+.footer svg[class*='iconExternalLink'] {
   display: none;
 }
 
