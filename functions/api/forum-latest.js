@@ -37,21 +37,31 @@ export async function onRequestGet() {
     const data = await res.json();
     const list = (data && data.topic_list && data.topic_list.topics) || [];
     const byId = {};
-    for (const u of data.users || []) byId[u.id] = u;
+    const byName = {};
+    for (const u of data.users || []) {
+      byId[u.id] = u;
+      byName[u.username] = u;
+    }
 
     const topics = list
       .filter(Boolean)
       .slice(0, LIMIT)
       .map((t) => {
-        const poster = t.posters && t.posters[0] ? byId[t.posters[0].user_id] : null;
+        // Show the most recent poster, not the topic starter, so that replies to
+        // older topics surface as fresh activity instead of the box looking
+        // frozen. Resolve via last_poster_username (the poster "description" is
+        // localizable, so don't parse it); fall back to the last posters entry.
+        const posters = t.posters || [];
+        const poster =
+          byName[t.last_poster_username] ||
+          (posters.length ? byId[posters[posters.length - 1].user_id] : null);
         return {
           id: t.id,
           title: t.title,
           url: `${FORUM}/t/${t.slug}/${t.id}`,
-          replies:
-            typeof t.reply_count === 'number'
-              ? t.reply_count
-              : Math.max(0, (t.posts_count || 1) - 1),
+          // Discourse's reply_count is often 0 in the topic list; posts_count - 1
+          // is the reply figure the forum itself shows.
+          replies: Math.max(0, (t.posts_count || 1) - 1),
           views: t.views || 0,
           activity: t.last_posted_at || t.bumped_at || t.created_at,
           author: poster ? poster.username : t.last_poster_username || '',

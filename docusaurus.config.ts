@@ -174,6 +174,12 @@ export default async function createConfig(): Promise<Config> {
             items: [
               {label: 'GitHub', href: 'https://github.com/dcvault-net/dcvault.net'},
               {label: 'Status', href: 'https://status.dcvault.net/'},
+              // Raw HTML so we can set rel="me", which Mastodon uses to verify
+              // the link back to https://mastodon.social/@dcvaultnet. A normal
+              // footer item would get rel="noopener noreferrer" and not verify.
+              {
+                html: '<a class="footer__link-item" href="https://mastodon.social/@dcvaultnet" target="_blank" rel="me noopener noreferrer">Mastodon</a>',
+              },
             ],
           },
           {
