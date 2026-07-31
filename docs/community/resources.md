@@ -69,7 +69,7 @@ For hub software that is still maintained, see [Hub software](/docs/hub/software
 
 - [Verlihub](https://github.com/Verlihub/verlihub)
 - [ADCH++](https://adchpp.sourceforge.io/)
-- [Luadch-ng](https://github.com/luadch-ng/luadch)
+- [Luadch-ng](https://github.com/luadch-ng/luadch-ng)
 - [uHub](https://github.com/janvidar/uhub/)
 - [JADCHub](https://gitlab.com/adchub/jadchub)
 - [PtokaX](https://www.ptokax.org/)
