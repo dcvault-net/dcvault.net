@@ -29,3 +29,6 @@ Thumbs.db
 
 # Cloudflare Wrangler (local dev state)
 .wrangler/
+# Local secrets for `wrangler pages dev` (e.g. HUB_STATUS_TOKEN) - never commit
+.dev.vars
+.dev.vars.*
