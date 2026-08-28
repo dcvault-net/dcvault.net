@@ -7,6 +7,7 @@
 const STALE_AFTER_S = 11 * 60; // > ~2x the 300s heartbeat -> offline/stale
 const DEFAULT_WINDOW = '7d';
 const MAX_POINTS = 3000;
+const EDGE_TTL = 120; // edge-cache TTL (s); hub samples change only every ~5 min
 const WINDOWS = {
   '24h': { seconds: 24 * 3600, bucket: 0 },         // raw (~5 min resolution)
   '7d':  { seconds: 7 * 24 * 3600, bucket: 0 },      // raw
@@ -28,6 +29,16 @@ export async function onRequestGet(context) {
   const reqWindow = url.searchParams.get('window');
   const wKey = WINDOWS[reqWindow] ? reqWindow : DEFAULT_WINDOW;
   const w = WINDOWS[wKey];
+
+  // Serve from the Cloudflare edge cache when possible. The key is normalised to
+  // the resolved window so the three ranges share one entry each; D1 is touched
+  // only on a miss. This decouples D1 row-reads from how often the widget polls
+  // or how many tabs/crawlers hit the endpoint (the whole cause of the overage).
+  const cache = caches.default;
+  const cacheKey = new Request(`${url.origin}/api/hub-status?window=${wKey}`);
+  const cached = await cache.match(cacheKey);
+  if (cached) return cached;
+
   const now = Math.floor(Date.now() / 1000);
   const since = now - w.seconds;
 
@@ -51,7 +62,7 @@ export async function onRequestGet(context) {
     }
 
     const online = !!latest && (now - latest.ts) <= STALE_AFTER_S;
-    return json(200, {
+    const resp = json(200, {
       online,
       name: latest ? latest.name : null,
       users: latest ? latest.users : null,
@@ -61,7 +72,9 @@ export async function onRequestGet(context) {
       staleAfter: STALE_AFTER_S,
       window: wKey,
       history, // [{ ts, users }]
-    }, 60);
+    }, EDGE_TTL);
+    context.waitUntil(cache.put(cacheKey, resp.clone()));
+    return resp;
   } catch (err) {
     // Degrade gracefully: the widget shows "unavailable" instead of breaking.
     return json(200, {

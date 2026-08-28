@@ -94,6 +94,14 @@ function useHubStatus(endpoint: string, range: Range, refreshMs: number) {
 
   useEffect(() => {
     let active = true;
+    let timer: ReturnType<typeof setTimeout> | null = null;
+    const hidden = () => typeof document !== 'undefined' && document.hidden;
+    const clear = () => {
+      if (timer) {
+        clearTimeout(timer);
+        timer = null;
+      }
+    };
     const load = () =>
       fetch(`${endpoint}?window=${range}`, {headers: {accept: 'application/json'}})
         .then((r) => r.json())
@@ -103,11 +111,32 @@ function useHubStatus(endpoint: string, range: Range, refreshMs: number) {
         .catch(() => {
           if (active) setState((s) => ({status: 'error', data: s.data}));
         });
-    load();
-    const id = setInterval(load, refreshMs);
+    // Only keep a timer running while the tab is visible: a backgrounded or
+    // pinned tab must not poll the D1-backed endpoint around the clock.
+    const schedule = () => {
+      clear();
+      if (!active || hidden()) return;
+      timer = setTimeout(() => {
+        void load().finally(schedule);
+      }, refreshMs);
+    };
+    const onVisibility = () => {
+      if (hidden()) {
+        clear();
+      } else {
+        void load().finally(schedule); // refresh on return, then resume polling
+      }
+    };
+    void load().finally(schedule);
+    if (typeof document !== 'undefined') {
+      document.addEventListener('visibilitychange', onVisibility);
+    }
     return () => {
       active = false;
-      clearInterval(id);
+      clear();
+      if (typeof document !== 'undefined') {
+        document.removeEventListener('visibilitychange', onVisibility);
+      }
     };
   }, [endpoint, range, refreshMs]);
 
@@ -159,7 +188,7 @@ export default function HubStatus({
   address,
   labels,
   endpoint = '/api/hub-status',
-  refreshMs = 60000,
+  refreshMs = 300000,
   compact = false,
   pageHref = '/docs/community/support-hub',
 }: Props): ReactNode {

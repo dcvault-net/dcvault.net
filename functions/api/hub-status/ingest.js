@@ -12,6 +12,7 @@
 const MAX_BODY_BYTES = 2048;      // heartbeats are tiny; reject anything larger
 const MAX_NAME_LEN = 128;         // clamp the operator-set hub name
 const MIN_WRITE_INTERVAL_S = 20;  // coalesce beats arriving faster than this
+const RETENTION_DAYS = 60;        // drop samples older than this (bounds table growth)
 
 // Constant-time string compare so the token check does not leak length or
 // content through early-exit timing.
@@ -80,6 +81,17 @@ export async function onRequestPost(context) {
     await env.DB.prepare(
       'INSERT INTO hub_samples (ts, name, users, uptime) VALUES (?, ?, ?, ?)'
     ).bind(ts, name, users, uptime).run();
+
+    // Retention: about once per new UTC day (reusing the `last` row already
+    // read above), drop samples older than RETENTION_DAYS so the table stays
+    // bounded. Indexed on ts and run in the background, so it neither delays the
+    // hub's ack nor costs more than a handful of writes per day.
+    if (!last || Math.floor(ts / 86400) !== Math.floor(last.ts / 86400)) {
+      const cutoff = ts - RETENTION_DAYS * 86400;
+      context.waitUntil(
+        env.DB.prepare('DELETE FROM hub_samples WHERE ts < ?').bind(cutoff).run().catch(() => {})
+      );
+    }
   } catch (err) {
     // The hub logs and retries on the next interval; surface a 5xx.
     return json(500, { error: 'store failed' });
