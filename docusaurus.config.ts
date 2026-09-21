@@ -136,6 +136,12 @@ export default async function createConfig(): Promise<Config> {
             className: 'dcv-ico dcv-ico--chat',
           },
           {
+            to: '/archive',
+            label: 'Archive',
+            position: 'left',
+            className: 'dcv-ico dcv-ico--archive',
+          },
+          {
             type: 'localeDropdown',
             position: 'right',
           },

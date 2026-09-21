@@ -1,0 +1,54 @@
+---
+title: "Direct Connect archive: preserved DC++ history"
+description: "Preserved wikis, forums and mailing lists from Direct Connect history: the ADCPortal and DC++ wikis, the DCBase forums and the dcdev developer list."
+wrapperClassName: dcv-landing
+hide_table_of_contents: true
+---
+
+import {ArchiveGrid, ArchiveCard} from '@site/src/components/ArchiveGrid';
+
+# Archive
+
+<div className="dcv-page-intro">
+
+A lot of the early Direct Connect web has gone offline over the years: wikis, forums and mailing lists where the protocol and its software were worked out. We rebuilt several of them as faithful, read-only mirrors so the knowledge stays reachable. More on the effort in the [forum thread](https://forum.dcvault.net/t/archiving-and-preservation-of-content-related-to-dc).
+
+</div>
+
+<ArchiveGrid>
+  <ArchiveCard
+    title="ADCPortal wiki"
+    href="https://adcpwiki.dcvault.net/"
+    image="/img/archive/adcpwiki.png"
+    meta="Wiki · ADC protocol">
+    A reference for the ADC protocol and its extensions. Rebuilt from Internet Archive snapshots and a recovered content dump, in the original MediaWiki look.
+  </ArchiveCard>
+  <ArchiveCard
+    title="DCppWiki"
+    href="https://dcppwiki.dcvault.net/"
+    image="/img/archive/dcppwiki.png"
+    meta="Wiki · NMDC protocol">
+    The DC++ project wiki and the main reference for the NMDC protocol, command by command. Reconstructed from 2005 to 2007 captures in its original MonoBook skin.
+  </ArchiveCard>
+  <ArchiveCard
+    title="DCBase forum"
+    href="https://dcbforum.dcvault.net/"
+    image="/img/archive/dcbforum.png"
+    meta="Forum · 2007–2019">
+    forum.dcbase.org, the DCBase community forum for clients, hub software, scripting and bots. Rebuilt from a full database dump with working full-text search.
+  </ArchiveCard>
+  <ArchiveCard
+    title="DC++ developer forum"
+    href="https://dcbforum.dcvault.net/dcpp_forums/"
+    image="/img/archive/dcbforum-dcpp.png"
+    meta="Forum · 2003–2007">
+    The older DC++ developer forum from archive.dcbase.org, where features and the protocol were hashed out. Over 4,800 topics, preserved with search.
+  </ArchiveCard>
+  <ArchiveCard
+    title="dcdev mailing list"
+    href="https://dcdevmail.dcvault.net/"
+    image="/img/archive/dcdevmail.png"
+    meta="Mailing list · 2003–2005">
+    Where the DC++ authors worked out the protocol and the beginnings of ADC. 432 messages, rebuilt as a threaded, searchable reader.
+  </ArchiveCard>
+</ArchiveGrid>

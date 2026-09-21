@@ -87,6 +87,14 @@
   color: var(--ifm-color-emphasis-700);
 }
 
+/* Left-aligned intro paragraph for a standalone page (e.g. Archive) */
+.dcv-page-intro {
+  max-width: 46rem;
+  margin: 0 0 1.75rem;
+  font-size: 1.05rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
 /* Brand-aligned admonitions (lime + anthracite).
    tip = brand lime, note/info = anthracite neutral.
    warning/danger keep their semantic signal colors. */
